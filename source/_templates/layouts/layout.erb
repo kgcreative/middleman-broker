@@ -13,17 +13,21 @@
   <%= stylesheet_link_tag "all" %>
   <%= yield_content :css %>
 
-  <script src="/assets/js/libs/modernizr-custom.js"></script>
+  <!--<script src="/assets/js/libs/modernizr-custom.js"></script>-->
 </head>
 <body class="<%= page_classes %>">
 
-  <%= partial "header" %>
+  <header class="site-header" role="banner">
+    <h1><a href="/"><%= data.site.name %></a></h1>
+  </header>
 
   <main class="site-main" role="main">
     <%= yield %>
   </main>
 
-  <%= partial "footer" %>
+  <footer class="site-footer" role="contentinfo">
+    <p class="copyright">Copyright &copy; <%= Time.now.year %> | <%= data.site.name %></p>
+  </footer>
 
   <%= javascript_include_tag  "all" %>
   <%= yield_content :js %>

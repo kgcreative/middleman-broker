@@ -3,10 +3,11 @@
 // -------------------------------------------------------------------
 
 body {
-  @include outer-container;
-  padding: 0 em(20);
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 0 1.25em;
 }
 
 .site-footer {
-  margin-top: em(100);
+  margin-top: 8em;
 }

@@ -1,6 +1,5 @@
 // Libs
-//= require libs/fastclick.js
-//= require libs/jquery.js
+// require libs/vendor_script.js
 
 // Src
 //= require_tree ./src
