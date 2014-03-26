@@ -1,9 +1,33 @@
 // @charset "UTF-8";
-
-// Sample: Require 3rd party CSS
+//
+// Sample:
+// Require 3rd party CSS
 //
 // require ../js/libs/royalslider/royalslider.css
+//
 
-// Local
-// =====
-//= require _style
+// Vendor
+@import "bourbon";
+@import "base/grid-settings";
+@import "neat";
+
+// Variables
+// @import "variables";
+
+// Mixins
+// @import "mixins/media-queries";
+// @import "mixins/helpers";
+// @import "mixins/img-flex";
+// @import "mixins/triangle";
+// @import "mixins/buttons";
+
+// Base
+// @import "base/normalize";
+// @import "base/base";
+// @import "base/code";
+// @import "base/forms";
+// @import "base/tables";
+// @import "base/elements";
+
+// Site
+@import "author";

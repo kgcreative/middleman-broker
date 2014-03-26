@@ -1,6 +1,7 @@
 # Dot files
 .DS_Store
 .sass-cache
+.cache
 .bundle
 
 # Directories
