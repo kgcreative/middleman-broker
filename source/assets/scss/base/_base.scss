@@ -1,0 +1,53 @@
+// -------------------------------------------------------------------
+// Base
+// -------------------------------------------------------------------
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: $helvetica;
+  font-size: $base_font_size;
+  line-height: $base_line_height;
+  color: $base_font_color;
+  background-color: $white;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+h1, h2, h3, 
+h4, h5, h6 {
+  line-height: 1.2;
+}
+
+a {
+  @include button-reset;
+  color: $link-color;
+  text-decoration: none;
+  outline: 0;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+  &:active, &:focus {
+    color: $link-hover-color;
+    outline: none;
+  }
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+
+  // Remove space below img
+  &.img {
+    display: block;
+  }
+}

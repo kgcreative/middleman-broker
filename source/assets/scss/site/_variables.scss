@@ -1,0 +1,43 @@
+// -------------------------------------------------------------------
+// Variables
+// -------------------------------------------------------------------
+
+// Dev
+$show_media_queries : true;
+
+// Font settings
+$base_font_size:   1em;
+$base_line_height: 1.5; 
+$base_margin:      20;
+
+// Colors
+$primary:     #2379cf;
+$secondary:   #001275;
+$tertiary:    #e15a00;
+
+$black:       #000;
+$light_black: #444;
+$light_gray:  #ddd;
+$gray:        #ccc;
+$dark_gray:   #999;
+$white_smoke: #eee;
+$light_smoke: #f5f5f5;
+$white:       #fff;
+
+$red:         #e74c3c;
+$green:       #2ecc71;
+$yellow:      #f1c40f;
+
+// Font colors
+$base_font_color: $light_black;
+$header_font_color: $base_font_color;
+
+// Links
+$link_color: $primary;
+$link_hover_color: $tertiary;
+
+// Max-width breakpoint helper
+$one_pixel: 0.0625em; // Used for setting max-width mq's
+$mobile_only: max-width 30em - $one_pixel;
+
+$gutter_spacing: flex-gutter($parent-columns);

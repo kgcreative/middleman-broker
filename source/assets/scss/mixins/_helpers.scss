@@ -1,0 +1,79 @@
+// -------------------------------------------------------------------
+// Helpers
+//
+// 1. Rounded Corners
+// 2. Hide Text
+// 3. Trailing Hovers
+// 4. Module
+// 5. Omega Reset
+//
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+// Rounded Corners
+// -------------------------------------------------------------------
+
+$base-border-radius: 6px;
+
+@mixin rounded-corners($border-radius: $base-border-radius) {
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+// -------------------------------------------------------------------
+// Hide Text
+// -------------------------------------------------------------------
+
+@mixin hide-text {
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+  opacity: 0;
+}
+
+.hide-text {
+  @include hide-text;
+}
+
+// -------------------------------------------------------------------
+// Trailing Hovers
+// -------------------------------------------------------------------
+
+@mixin trailing-hovers {
+  transition: all .3s;
+  transition-property: background-color, color, border-color;
+
+  &:hover,
+  &:active {
+    transition: 0s;
+  }
+}
+
+// -------------------------------------------------------------------
+// Module
+//
+// Removes top margin from first child element
+// and bottom margin from last child element
+// -------------------------------------------------------------------
+
+
+@mixin module {
+  > *:first-child { margin-top: 0; }
+  > *:last-child { margin-bottom: 0; }
+}
+
+// Enable .module class
+.module {
+  @include module;
+}
+
+// -------------------------------------------------------------------
+// Omega Reset for Bourbon Neat
+//
+// http://joshfry.me/notes/omega-reset-for-bourbon-neat
+// -------------------------------------------------------------------
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}

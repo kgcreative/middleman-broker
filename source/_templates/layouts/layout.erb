@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+
+  <title><%= (current_page.data.page_title || current_page.data.title).capitalize %> | <%= data.site.name %> </title>
+  <meta content="<%= current_page.data.description || data.site.description %>" name="description" />
+
+  <!--<script type="text/javascript" src="//use.typekit.net/<%= data.site.typekitId %>.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
+
+  <%= stylesheet_link_tag "all" %>
+  <%= yield_content :css %>
+
+  <script src="/assets/js/libs/modernizr-custom.js"></script>
+</head>
+<body class="<%= page_classes %>">
+
+  <%= partial "header" %>
+
+  <main class="site-main" role="main">
+    <%= yield %>
+  </main>
+
+  <%= partial "footer" %>
+
+  <%= javascript_include_tag  "all" %>
+  <%= yield_content :js %>
+  
+</body>
+</html>
