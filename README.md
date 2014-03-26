@@ -12,7 +12,7 @@ Built with [Middleman](http://middlemanapp.com). Read the [docs &rarr;](http://m
 #### Install Gems
 
 ```
-bundle install --path=vendor
+$ bundle install --path=vendor
 ```
 
 #### Run Middleman
@@ -20,7 +20,7 @@ bundle install --path=vendor
 View the local site at [localhost:4567](http://localhost:4567)
 
 ```
-bundle exec middleman
+$ bundle exec middleman
 ```
 
 #### Build production site
@@ -28,5 +28,19 @@ bundle exec middleman
 Generates static site in `/build` directory.
 
 ```
-bundle exec middleman build
+$ bundle exec middleman build
 ```
+
+## Note
+
+If Bower is installed, run:
+
+```
+$ bower install
+```
+#### Bower defaults
+
+- [assets_init](https://github.com/joshfry/assets_init)
+  - Replace the contents of `/source/assets/` with `/vendor/bower/assets_init/source`.
+- jQuery.js
+- Fastclick.js
