@@ -29,7 +29,6 @@ note: Depending on the latest version, you may need to run bundle update
 $ bundle update
 ```
 
-
 ## Run Bower
 
 ```
