@@ -8,8 +8,9 @@ gem 'middleman-livereload', '~> 3.1.0'
 gem 'middleman-favicon-maker', '~> 3.5'
 gem 'middleman-pry'
 
-gem 'bourbon', '~> 3.1.8'
-gem 'neat', '~> 1.4.0'
+gem 'bourbon', '~> 4.0.1'
+gem 'bitters', '~> 0.9.3'
+gem 'neat', '~> 1.6.0'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
