@@ -1,13 +1,20 @@
-# Middleman Init
+#Middleman Broker
+
+A middleman primer for Windows. Kick off a new middleman project with boilerplate code, starting from a fresh Windows install.
 
 Built with [Middleman](http://middlemanapp.com). Read the [docs &rarr;](http://middlemanapp.com/basics/getting-started)
 
-## Requirements
-
-- [Ruby](https://www.ruby-lang.org/en)
-- [Bundler](http://bundler.io)
-
 ## Get Started
+
+### Install required development environment
+Starting from scratch, install, in order:
+
+- [GIT for windows](http://git-scm.com/)
+- [RubyInstaller for windows](http://rubyinstaller.org/)
+  - [Ruby Develpment Kit for windows](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
+- [Bundler](http://bundler.io)
+- [Node](http://nodejs.org/)
+- [Bower](http://bower.io/)
 
 #### Install Gems
 
