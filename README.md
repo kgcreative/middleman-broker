@@ -42,12 +42,12 @@ $ bower install
 
 #### Important:
 - Replace the contents of `/source/assets/` with `/vendor/bower/assets_init/source`.
-- Install the bourbon, bitters, and neat dependencies on to '/source/assets/scss'
-'''
+- Install the bourbon, bitters, and neat dependencies on to `/source/assets/scss`
+```
 $ bourbon install
 $ bitters install
 $ neat install
-'''
+```
 
 Uncomment the following lines in "/source/assets/bitters/_bitters.scss":
 
