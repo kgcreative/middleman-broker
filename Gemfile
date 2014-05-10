@@ -1,16 +1,18 @@
 # If you have OpenSSL installed, we recommend updating
-# the following line to use 'https'
+# the following line to use "https"
 source 'http://rubygems.org'
 
-gem 'rake'
-gem 'middleman', '~>3.2.2'
-gem 'middleman-livereload', '~> 3.1.0'
-gem 'middleman-favicon-maker', '~> 3.5'
-gem 'middleman-pry'
+gem "middleman", "~>3.3.2"
+
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
 
 gem 'bourbon', '~> 4.0.1'
 gem 'bitters', '~> 0.9.3'
 gem 'neat', '~> 1.6.0'
 
 # For faster file watcher updates on Windows:
-gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+
+# Windows does not come with time zone data
+gem "tzinfo-data", platforms: [:mswin, :mingw]
