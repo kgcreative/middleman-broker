@@ -25,17 +25,17 @@ $ bundle install --path=vendor
 #### Install Bourbon, Neat and Bitters
 
 Follow the instructions on each site to install:
-- [Bourbon](bourbon.io)
+- [Bourbon](http://bourbon.io)
 - [Neat](http://neat.bourbon.io/)
 - [Bitters](http://bitters.bourbon.io/)
 
-Then go to to \source\assets\scss and run the respective installers
+Then go to to /source/assets/scss and run the respective installers
 ```
-$ bourbon install
+$ npm install node-bourbon
 ```
 
 ```
-$ neat install
+$ npm install node-neat
 ```
 
 ```
