@@ -22,7 +22,41 @@ Starting from scratch, install, in order:
 $ bundle install --path=vendor
 ```
 
-#### Run Middleman
+### Install Bourbon, Neat and Bitters
+
+Follow the instructions on each site to install:
+- [Bourbon](bourbon.io)
+- [Neat](http://neat.bourbon.io/)
+- [Bitters](http://bitters.bourbon.io/)
+
+Then go to to \source\assets\scss and run the respective installers
+```
+$ bourbon install
+```
+
+```
+$ neat install
+```
+
+```
+$ bitters install
+```
+
+## Run Bower
+
+```
+$ bower install
+```
+#### Bower defaults
+
+- [assets_init](https://github.com/kgcreative/assets_init)
+- jQuery.js
+- Fastclick.js
+
+#### Important:
+  - Replace the contents of `/source/assets/` with `/vendor/bower/assets_init/source`.
+
+## Run Middleman
 
 View the local site at [localhost:4567](http://localhost:4567)
 
@@ -30,24 +64,10 @@ View the local site at [localhost:4567](http://localhost:4567)
 $ bundle exec middleman
 ```
 
-#### Build production site
+## Build production site
 
 Generates static site in `/build` directory.
 
 ```
 $ bundle exec middleman build
 ```
-
-## Note
-
-If Bower is installed, run:
-
-```
-$ bower install
-```
-#### Bower defaults
-
-- [assets_init](https://github.com/joshfry/assets_init)
-  - Replace the contents of `/source/assets/` with `/vendor/bower/assets_init/source`.
-- jQuery.js
-- Fastclick.js
