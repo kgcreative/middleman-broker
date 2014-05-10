@@ -24,6 +24,12 @@ This is a one-time install at the beggining of the project
 $ bundle install --path=vendor
 ```
 
+note: Depending on the latest version, you may need to run bundle update
+```
+$ bundle update
+```
+
+
 ## Run Bower
 
 ```
