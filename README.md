@@ -53,7 +53,7 @@ $ neat install
 Uncomment the following lines in "/source/assets/bitters/_bitters.scss":
 
 ```scss
-@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
+@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
 @import "grid-settings";
 ``````
 
