@@ -43,19 +43,19 @@ $ bower install
 #### Important:
 - Replace the contents of `/source/assets/` with `/vendor/bower/assets_init/source`.
 
-Install the bourbon, bitters, and neat dependencies on to `/source/assets/scss`
-```
-$ bourbon install
-$ bitters install
-$ neat install
-```
+- Install the bourbon, bitters, and neat dependencies on to `/source/assets/scss`
+	```
+	$ bourbon install
+	$ bitters install
+	$ neat install
+	```
 
-Uncomment the following lines in "/source/assets/bitters/_bitters.scss":
+- Uncomment the following lines in "/source/assets/bitters/_bitters.scss":
 
-```scss
-@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
-@import "grid-settings";
-``````
+	```scss
+	@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
+	@import "grid-settings";
+	``````
 
 ## Run Middleman
 
