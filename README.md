@@ -43,7 +43,12 @@ $ bower install
 #### Important:
 - Replace the contents of `/source/assets/` with `/vendor/bower/assets_init/source`.
 
-- Uncomment the following lines in `/vendor/ruby/1.9.1/gems/bitters-0.9.3/app/assets/stylesheets/_bitters.scss`:
+- Install the bitters files to your `/source/assets/scss/` folder
+	```
+	$ bundle exec bitters install
+	```
+
+- Uncomment the following lines in `/source/assets/scss/bitters/_bitters.scss`:
 
 	```scss
 	// Neat Settings -- uncomment if using Neat
