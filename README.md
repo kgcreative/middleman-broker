@@ -43,20 +43,6 @@ $ bower install
 #### Important:
 - Replace the contents of `/source/assets/` with `/vendor/bower/assets_init/source`.
 
-- Install the bitters files to your `/source/assets/scss/` folder
-	```
-	$ bundle exec bitters install
-	```
-
-- Uncomment the following lines in `/source/assets/scss/bitters/_bitters.scss`:
-
-	```scss
-	// Neat Settings -- uncomment if using Neat
-	///////////////////////////////////////////////////////////////////////////////
-	@import "neat-helpers"; // or "neat/neat-helpers" when not in Rails
-	@import "grid-settings";
-	``````
-
 ## Run Middleman
 
 View the local site at [localhost:4567](http://localhost:4567)
