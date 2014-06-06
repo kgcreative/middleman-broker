@@ -49,20 +49,20 @@ set :helpers_dir,  'lib/helpers'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  # activate :relative_assets
+  activate :relative_assets
   # activate :cache_buster
   # activate :asset_hash
 
   # Favicon generator
   # https://github.com/follmann/middleman-favicon-maker
-  activate :favicon_maker do |f|
-    f.template_dir  = File.join(root, 'source/assets/img')
-    f.output_dir    = File.join(root, 'build')
-    f.icons = {
-      "favicon.ico" => [
-        { icon: "favicon.ico", size: "32x32,16x16" },
-      ]
-    }
+  # activate :favicon_maker do |f|
+  #  f.template_dir  = File.join(root, 'source/assets/img')
+  #  f.output_dir    = File.join(root, 'build')
+  #  f.icons = {
+  #    "favicon.ico" => [
+  #      { icon: "favicon.ico", size: "32x32,16x16" },
+  #    ]
+  #  }
   end
 
   # Alt image path
