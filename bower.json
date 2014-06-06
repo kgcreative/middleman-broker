@@ -8,6 +8,6 @@
     "normalize-css": "~3.0.0"
   },
   "devDependencies": {
-    "assets_init": "https://github.com/kgarcia/assets_init.git"
+    "assets_init": "https://github.com/kgcreative/assets_init.git"
   }
 }
