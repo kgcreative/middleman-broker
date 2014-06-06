@@ -10,7 +10,7 @@ gem "sass", "~>3.3"
 gem "middleman-livereload", "~> 3.1.0"
 
 gem 'bourbon', '~> 4.0.1'
-gem 'neat', '~> 1.5.1'
+gem 'neat', '~> 1.6'
 # gem 'bitters', '~> 0.9.3' // This was moved to assets_init
 
 # For faster file watcher updates on Windows:
